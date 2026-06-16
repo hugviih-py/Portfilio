@@ -3,95 +3,328 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Victor Hugo | Desenvolvedor Web</title>
+    <title>Victor Hugo | Portfólio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="blur-bg">
-        <div class="blob orange"></div>
-        <div class="blob blue"></div>
-    </div>
+    <!-- Particles Background -->
+    <div class="particles-bg" id="particles"></div>
 
     <header class="navbar">
-        <div class="logo">Victor<span>.dev</span></div>
+        <div class="logo">VH</div>
         <nav class="nav-menu">
-            <a href="#" class="active">Início</a>
-            <a href="#">Sobre</a>
-            <a href="#">Habilidades</a>
-            <a href="#">Projetos</a>
-            <a href="#">Formação</a>
-            <a href="#">Contato</a>
+            <a href="#inicio" class="active">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#habilidades">Skills</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#formacao">Formação</a>
+            <a href="#contato">Contato</a>
         </nav>
-        <button class="btn-talk">Vamos Conversar <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+        <button class="btn-talk"><i class="fa-regular fa-comment"></i> Vamos Conversar</button>
     </header>
 
-    <main class="container">
-        
-        <section class="hero">
-            <div class="hero-content">
-                <p class="subtitle">Olá, eu sou</p>
-                <h1 class="main-title">Victor Hugo</h1>
-                <h2 class="typing-text">Desenvolvedor Web<span class="cursor">|</span></h2>
-                <p class="description">
-                    Profissional de TI, estudante de Ciência da Computação e apaixonado por transformar ideias em soluções digitais.
-                </p>
-                
-                <div class="hero-buttons">
-                    <button class="btn-primary"><i class="fa-solid fa-download"></i> Download CV</button>
-                    <button class="btn-secondary"><i class="fa-solid fa-user"></i> Ver Projetos</button>
+    <main>
+
+        <!-- HERO -->
+        <section class="hero" id="inicio">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="dot"></span> Disponível para projetos
+                    </div>
+                    <h1 class="main-title">
+                        Victor <span>Hugo</span>
+                    </h1>
+                    <h2 class="typing-text">Desenvolvedor Web &amp; Entusiasta de TI</h2>
+                    <p class="description">
+                        Profissional de TI, estudante de Ciência da Computação e apaixonado por transformar ideias em soluções digitais inovadoras.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary"><i class="fa-regular fa-file-pdf"></i> Download CV</button>
+                        <button class="btn-secondary"><i class="fa-regular fa-eye"></i> Ver Projetos</button>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
                 </div>
 
-                <div class="social-links">
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                <div class="hero-illustration">
+                    <div class="code-card">
+                        <div class="code-line"><span class="keyword">const</span> dev = {</div>
+                        <div class="code-line indent">nome: <span class="string">'Victor Hugo'</span>,</div>
+                        <div class="code-line indent">area: <span class="string">'Desenvolvimento Web'</span>,</div>
+                        <div class="code-line indent">paixao: <span class="string">'Criar soluções'</span>,</div>
+                        <div class="code-line">};</div>
+                        <div class="code-line"><span class="keyword">console</span>.<span class="method">log</span>(dev);</div>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="hero-graphics">
-                <div class="cube-placeholder">
-                    <div class="floating-orb"></div>
+        <!-- SOBRE -->
+        <section class="sobre" id="sobre">
+            <div class="container">
+                <div class="sobre-grid">
+                    <div class="sobre-imagem">
+                        <div class="avatar-box">
+                            <i class="fa-solid fa-user-astronaut"></i>
+                            <div class="ring"></div>
+                        </div>
+                    </div>
+                    <div class="sobre-texto">
+                        <span class="tag">Sobre Mim</span>
+                        <h2>Quem é <span>Victor Hugo</span>?</h2>
+                        <p>
+                            Sou Victor Hugo Alves Barboza, profissional da área de Tecnologia da Informação, formado em Administração, pós-graduado em Engenharia de Software e atualmente estudante de Ciência da Computação.
+                        </p>
+                        <p>
+                            Tenho experiência com desenvolvimento web, banco de dados, suporte técnico e infraestrutura de TI. Gosto de aprender, resolver problemas e criar soluções que geram impacto real.
+                        </p>
+                        <div class="assinatura">Victor Hugo</div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="about-card">
-            <div class="about-text">
-                <span class="section-tag">Quem sou eu</span>
-                <h3>Sobre Mim</h3>
-                <p>
-                    Sou Victor Hugo Alves Barboza, profissional da área de Tecnologia da Informação, formado em Administração, pós-graduado em Engenharia de Software e atualmente estudante de Ciência da Computação.
-                </p>
-                <p>
-                    Tenho experiência com desenvolvimento web, banco de dados, suporte técnico e infraestrutura de TI. Gosto de aprender, resolver problemas e criar soluções que geram impacto.
-                </p>
-                <div class="signature">Victor Hugo</div>
+        <!-- HABILIDADES -->
+       <!-- HABILIDADES -->
+<section class="habilidades" id="habilidades">
+    <div class="container">
+        <div class="section-header">
+            <span class="tag">Minhas Skills</span>
+            <h2>Tecnologias que <span>domino</span></h2>
+            <p>Ferramentas e linguagens que utilizo no dia a dia</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fa-brands fa-html5"></i>
+                <h4>HTML5</h4>
+                <div class="skill-bar"><div class="skill-progress" style="width:95%"></div></div>
+                <span class="skill-percent">95%</span>
             </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-css3-alt"></i>
+                <h4>CSS3</h4>
+                <div class="skill-bar"><div class="skill-progress" style="width:90%"></div></div>
+                <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-js"></i>
+                <h4>JavaScript</h4>
+                <div class="skill-bar"><div class="skill-progress" style="width:85%"></div></div>
+                <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-react"></i>
+                <h4>React</h4>
+                <div class="skill-bar"><div class="skill-progress" style="width:80%"></div></div>
+                <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-node-js"></i>
+                <h4>Node.js</h4>
+                <div class="skill-bar"><div class="skill-progress" style="width:75%"></div></div>
+                <span class="skill-percent">75%</span>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-database"></i>
+                <h4>SQL</h4>
+                <div class="skill-bar"><div class="skill-progress" style="width:85%"></div></div>
+                <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-python"></i>
+                <h4>Python</h4>
+                <div class="skill-bar"><div class="skill-progress" style="width:70%"></div></div>
+                <span class="skill-percent">95%</span>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-git-alt"></i>
+                <h4>Git</h4>
+                <div class="skill-bar"><div class="skill-progress" style="width:90%"></div></div>
+                <span class="skill-percent">90%</span>
+            </div>
+        </div>
+    </div>
+</section>
 
-            <div class="metrics-grid">
-                <div class="metric-card">
-                    <i class="fa-solid fa-graduation-cap icon-gold"></i>
-                    <h4>3+</h4>
-                    <p>Formações <span>Acadêmicas</span></p>
+        <!-- PROJETOS -->
+        <section class="projetos" id="projetos">
+            <div class="container">
+                <div class="section-header">
+                    <span class="tag">Portfólio</span>
+                    <h2>Projetos em <span>destaque</span></h2>
+                    <p>Alguns dos trabalhos que desenvolvi recentemente</p>
                 </div>
-                <div class="metric-card">
-                    <i class="fa-solid fa-code icon-orange"></i>
-                    <h4>10+</h4>
-                    <p>Tecnologias <span>Dominadas</span></p>
-                </div>
-                <div class="metric-card">
-                    <i class="fa-solid fa-laptop icon-yellow"></i>
-                    <h4>100%</h4>
-                    <p>Dedicação <span>Em tudo que faço</span></p>
+                <div class="projetos-grid">
+                    <div class="projeto-card">
+                        <div class="projeto-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                        <h3>MarketHub</h3>
+                        <p>E-commerce completo com carrinho, autenticação JWT e dashboard administrativo.</p>
+                        <div class="tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <a href="#" class="link-projeto">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="projeto-card">
+                        <div class="projeto-icon"><i class="fa-solid fa-chart-simple"></i></div>
+                        <h3>FinanSys</h3>
+                        <p>Sistema financeiro com gráficos interativos, relatórios exportáveis e dashboard.</p>
+                        <div class="tags">
+                            <span>Vue.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <a href="#" class="link-projeto">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="projeto-card">
+                        <div class="projeto-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+                        <h3>TaskFlow Pro</h3>
+                        <p>Organizador de tarefas estilo Kanban com drag & drop, prazos e colaboração.</p>
+                        <div class="tags">
+                            <span>Next.js</span>
+                            <span>Prisma</span>
+                            <span>Tailwind</span>
+                        </div>
+                        <a href="#" class="link-projeto">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- FORMAÇÃO -->
+        <section class="formacao" id="formacao">
+            <div class="container">
+                <div class="section-header">
+                    <span class="tag">Educação</span>
+                    <h2>Formação &amp; <span>Certificados</span></h2>
+                    <p>Minha jornada acadêmica e profissional</p>
+                </div>
+
+                <div class="formacao-wrapper">
+                    <!-- Linha do tempo -->
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2023 - 2026</span>
+                                <h3>Ciência da Computação</h3>
+                                <p>Universidade Estácio de Sá — Cursando</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2022 - 2024</span>
+                                <h3>Pós-graduação em Engenharia de Software</h3>
+                                <p>PUC Minas — Concluído</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2017 - 2021</span>
+                                <h3>Administração</h3>
+                                <p>Centro Universitário Una — Concluído</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certificados -->
+                    <div class="certificados-grid">
+                        <div class="certificado-card">
+                            <i class="fa-solid fa-brain"></i>
+                            <div>
+                                <h4>Inteligência Artificial na Prática</h4>
+                                <p>Capacita Anhanguera 2024 · 4 horas</p>
+                            </div>
+                        </div>
+                        <div class="certificado-card">
+                            <i class="fa-brands fa-python"></i>
+                            <div>
+                                <h4>Python 3 do básico ao avançado</h4>
+                                <p>141 horas · Projetos reais</p>
+                            </div>
+                        </div>
+                        <div class="certificado-card">
+                            <i class="fa-solid fa-robot"></i>
+                            <div>
+                                <h4>Python AI Development</h4>
+                                <p>Mimo · 2026</p>
+                            </div>
+                        </div>
+                        <div class="certificado-card">
+                            <i class="fa-solid fa-code-branch"></i>
+                            <div>
+                                <h4>Engenharia de Software</h4>
+                                <p>Unopar · 40 horas · 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section class="contato" id="contato">
+            <div class="container">
+                <div class="section-header">
+                    <span class="tag">Contato</span>
+                    <h2>Vamos <span>conversar</span>?</h2>
+                    <p>Estou disponível para novos desafios e oportunidades</p>
+                </div>
+                <div class="contato-wrapper">
+                    <div class="contato-info">
+                        <div class="info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <strong>E-mail</strong>
+                                <p>victor.hugo@victor.dev</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <strong>Telefone</strong>
+                                <p>+55 (31) 9 9999-8888</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <strong>Localização</strong>
+                                <p>Belo Horizonte, MG - Brasil</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contato-form" id="contactForm">
+                        <input type="text" placeholder="Seu nome" required>
+                        <input type="email" placeholder="Seu e-mail" required>
+                        <textarea rows="4" placeholder="Sua mensagem..." required></textarea>
+                        <button type="submit"><i class="fa-regular fa-paper-plane"></i> Enviar mensagem</button>
+                        <div id="formFeedback"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Victor Hugo Alves Barboza • Desenvolvido com <i class="fa-solid fa-heart" style="color:#ef4444;"></i></p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
