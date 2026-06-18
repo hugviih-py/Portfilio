@@ -34,16 +34,7 @@ document.querySelector('.btn-secondary')?.addEventListener('click', function() {
 });
 
 document.querySelector('.btn-primary')?.addEventListener('click', function() {
-    const cvContent = `Victor Hugo Alves Barboza\nDesenvolvedor Web Full Stack\n\nFormação: Administração, Pós Engenharia de Software, Cursando Ciência da Computação.\nExperiência: Desenvolvimento web, banco de dados, suporte e infraestrutura.\nContato: victor.hugo@victor.dev`;
-    const blob = new Blob([cvContent], { type: 'text/plain' });
-    const link = document.createElement('a');
-    link.href = URL.createObjectURL(blob);
-    link.download = 'CV_Victor_Hugo.txt';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(link.href);
-    alert('📄 Download do CV iniciado!');
+    window.open('Curriculo.pdf', '_blank');
 });
 
 // Formulário de contato
